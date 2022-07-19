@@ -1,0 +1,34 @@
+	<header>
+		<div>
+			<a href="https://cookingmsk.ru"><img src="photo/logo.jpg"></a>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://cookingmsk.ru/about">О нас</a>
+					<div>
+						<ul>
+							<li><a href="https://cookingmsk.ru/photos">Наши работы</a></li>
+							<li><a href="https://cookingmsk.ru/reviews">Отзывы</a></li>
+							<li><a href="https://cookingmsk.ru/news">Новости</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="https://cookingmsk.ru/products">Продукция</a></li>
+				<li><a href="https://cookingmsk.ru/contacts">Контакты</a></li>
+				<!-- <li><a href="https://cookingmsk.ru/account">Личный кабинет</a></li> -->
+				<li><a href="https://cookingmsk.ru/buy">Корзина</a></li>
+			</ul>
+		</nav>
+
+		<script type="text/javascript">
+			$(document).ready (function () {
+				$('header > nav > ul > li:first-of-type').mouseenter (function () {
+					$('header > nav > ul > li:first-of-type > div').show ();
+				});
+				$('header > nav > ul > li:first-of-type').mouseleave (function () {
+					$('header > nav > ul > li:first-of-type > div').hide ();
+				});
+			});
+		</script>
+	</header>
